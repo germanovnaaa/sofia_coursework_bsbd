@@ -30,16 +30,10 @@ namespace sofia
             {
                 case "husband":
                     this.transaction_typesTableAdapter.Fill(this.database1DataSet.transaction_types);
-                    insert_button.Visible = false;
-                    delete_button.Visible = false;
-                    update_button.Visible = false;
                     select_button.Visible = false;
                     break;
                 case "wife":
                     this.transaction_typesTableAdapter.Fill(this.database1DataSet.transaction_types);
-                    insert_button.Visible = false;
-                    delete_button.Visible = false;
-                    update_button.Visible = false;
                     select_button.Visible = false;
                     break;
                 case "kid":

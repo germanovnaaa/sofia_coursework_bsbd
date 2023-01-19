@@ -32,16 +32,10 @@ namespace sofia
             {
                 case "husband":
                     this.categoriesTableAdapter.Fill(this.database1DataSet.categories);
-                    insert_button.Visible = false;
-                    delete_button.Visible = false;
-                    update_button.Visible = false;
                     select_button.Visible = false;
                     break;
                 case "wife":
                     this.categoriesTableAdapter.Fill(this.database1DataSet.categories);
-                    insert_button.Visible = false;
-                    delete_button.Visible = false;
-                    update_button.Visible = false;
                     select_button.Visible = false;
                     break;
                 case "kid":

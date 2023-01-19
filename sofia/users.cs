@@ -30,9 +30,11 @@ namespace sofia
             {
                 case "husband":
                     this.usersTableAdapter.Fill(this.database1DataSet.users);
+                    select_button.Visible = false;
                     break;
                 case "wife":
                     this.usersTableAdapter.Fill(this.database1DataSet.users);
+                    select_button.Visible = false;
                     break;
                 case "kid":
                     this.usersTableAdapter.FillByCurrentUserId(this.database1DataSet.users, _user.id);
