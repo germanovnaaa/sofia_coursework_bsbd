@@ -127,11 +127,16 @@ namespace sofia
         {
             try
             {
-                string sqlcommand = "UPDATE transactions SET category_id = (SELECT Id FROM categories WHERE category_name = @category_name) WHERE Id = @Id";
+                string sqlcommand = "UPDATE transactions SET category_id = (SELECT Id FROM categories WHERE category_name = @category_name), cost = @cost, " +
+                    "user_id = @user_id, transaction_type_id = (SELECT Id FROM transaction_types WHERE transaction_name = @transaction_name), date = @date WHERE Id = @Id";
                 SqlCommand command = sql_connection.CreateCommand();
                 command.CommandText = sqlcommand;
                 command.Parameters.AddWithValue("@Id", Convert.ToInt32(id_txt_transaction.Text));
                 command.Parameters.AddWithValue("@category_name", category_box.Text);
+                command.Parameters.AddWithValue("@cost", Convert.ToDecimal(cost_txt_transaction.Text));
+                command.Parameters.AddWithValue("@user_id", Convert.ToInt32(userid_txt_transaction.Text));
+                command.Parameters.AddWithValue("@transaction_name", transactions_box.Text);
+                command.Parameters.AddWithValue("@date", Convert.ToDateTime(transdate_trasactions.Value));
                 command.ExecuteNonQuery();
                 dataGridView1.DataSource = FillDataGridView("select * FROM transactions");
                 MessageBox.Show("Succesfully updated", "Success", MessageBoxButtons.OK);
