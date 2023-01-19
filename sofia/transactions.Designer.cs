@@ -190,7 +190,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(957, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(957, 28);
             this.menuStrip1.TabIndex = 33;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -199,7 +199,7 @@
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(76, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // aboutToolStripMenuItem
@@ -216,7 +216,7 @@
             this.categoriesToolStripMenuItem,
             this.transactiontypesToolStripMenuItem});
             this.tablesToolStripMenuItem.Name = "tablesToolStripMenuItem";
-            this.tablesToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
+            this.tablesToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.tablesToolStripMenuItem.Text = "Tables";
             // 
             // usersToolStripMenuItem
@@ -243,7 +243,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -493,7 +493,8 @@
             "clothes",
             "entertainment",
             "education",
-            "other"});
+            "other",
+            "transport"});
             this.category_box.Location = new System.Drawing.Point(155, 298);
             this.category_box.Name = "category_box";
             this.category_box.Size = new System.Drawing.Size(225, 24);
