@@ -334,6 +334,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(898, 185);
             this.dataGridView1.TabIndex = 49;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 

@@ -432,5 +432,10 @@ namespace sofia
         {
             sum_outcome.BackColor = Color.White;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
